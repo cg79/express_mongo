@@ -6,11 +6,11 @@ var bodyParser = require('body-parser');
 var book = require('./routes/book');
 var app = express();
 
-var mongoose = require('mongoose');
-mongoose.Promise = require('bluebird');
-mongoose.connect('mongodb://localhost/mern-secure', { promiseLibrary: require('bluebird') })
-  .then(() =>  console.log('connection succesful'))
-  .catch((err) => console.error(err));
+// var mongoose = require('mongoose');
+// mongoose.Promise = require('bluebird');
+// mongoose.connect('mongodb://localhost/mern-secure', { promiseLibrary: require('bluebird') })
+//   .then(() =>  console.log('connection succesful'))
+//   .catch((err) => console.error(err));
 
 // app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -51,6 +51,7 @@ app.use(function(err, req, res, next) {
 
 
 	
+const port = 4004;
 
-app.listen(3000, () => console.log('Example app listening on port 3000!'))
+app.listen(port, () => console.log('Example app listening!'))
 //module.exports = app;
