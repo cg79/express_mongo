@@ -5,7 +5,7 @@ class MongoStorage {
         this.db = null;
         this.logs = null;
         this.users = null;
-        console.log('ctor');
+        console.log('ctorrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr');
     }
 
     initialize(connectionString) {

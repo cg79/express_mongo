@@ -1,7 +1,7 @@
-var express = require('express');
+import express from 'express'
 var router = express.Router();
 
-const userService = require('../services/user/user-service');
+import userService from '../services/user/user-service';
 
 const asyncMiddleware = fn =>
   (req, res, next) => {

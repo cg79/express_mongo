@@ -1,0 +1,33 @@
+{
+  "name": "express_mongo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js --exec babel-node --presets es2015,stage-2",
+    "build": "babel lib -d dist",
+    "serve": "node dist/index.js",
+    "test": "mocha --compilers js:babel-register"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cg79/express_mongo.git"
+  },
+  "author": "Claudiu Gombos <claudiu9379@yahoo.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cg79/express_mongo/issues"
+  },
+  "homepage": "https://github.com/cg79/express_mongo#readme",
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-2": "^6.11.0",
+    "babel-register": "^6.11.6",
+    "mocha": "^3.0.1",
+    "nodemon": "^1.10.0"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0"
+  }
+}
